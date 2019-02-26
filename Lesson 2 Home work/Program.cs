@@ -17,17 +17,16 @@ namespace Lesson_2_Home_work
             //task1();
             //task2();
             task3();
-            //task4();
-            //task5();
-            //task6();
+            task4();
+            task5();
+            task6();
             //task7();
             //task8();
             //task9();
             //task10();
         }
 
-
-        public static void task1()
+                public static void task1()
         {
             int a = 1, b = 2, c = 3;
             double x;
@@ -70,10 +69,41 @@ namespace Lesson_2_Home_work
 
         public static void task3()
         {
-            double x = 2, y = 3, z;
+            double x = 5, y = 6, z;
             Console.WriteLine("x = "+x+", y = "+y);
             z = (Math.Sin(x) + Math.Cos(y)) / (Math.Cos(x) - Math.Sin(y)) * Math.Tan(x * y);
             Console.WriteLine("Task3 = " + z);
+            Console.ReadLine();
+        }
+
+        public static void task4()
+        {
+            double x = 5, y = 6, z;
+            Console.WriteLine("x = " + x + ", y = " + y);
+            z = (x + y) / (y + 1) - (x * y - 12) / (34 + x);
+            Console.WriteLine("Task4 = " + z);
+            Console.ReadLine();
+        }
+
+        public static void task5()
+        {
+            double x, y, z;
+            Console.WriteLine("Input x:");
+            x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Input y:");
+            y = Convert.ToDouble(Console.ReadLine());
+            z = (3 + Math.Pow(Math.E, y - 1)) / (1 + Math.Pow(x, 2) * Math.Abs(y - Math.Tan(x)));
+            Console.WriteLine("Task5 = " + z);
+            Console.ReadLine();
+        }
+
+        public static void task6()
+        {
+            double x, z;
+            Console.WriteLine("Input x:");
+            x = Convert.ToDouble(Console.ReadLine());
+            z = x - Math.Pow(x, 3) / 3 + Math.Pow(x, 5) / 5;
+            Console.WriteLine("Task6 = " + z);
             Console.ReadLine();
         }
     }
